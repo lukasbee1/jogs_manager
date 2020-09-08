@@ -24,9 +24,9 @@ const Jogs = (props) => {
                 (jog) =>
                     Date.parse(jog.date) > Date.parse(e.target.value) &&
                     Date.parse(jog.date) < Date.parse(filterTo)
-                    )
+            );
             setFilteredJogs(filtered);
-            setFilterTo(e.target.value)
+            setFilterTo(e.target.value);
         }
         if (e.target.name === "dTo") {
             filtered = filtered.filter(
@@ -38,6 +38,7 @@ const Jogs = (props) => {
             setFilteredJogs(filtered);
         }
     };
+    
     return (
         <>
             {jogs.length ? (
@@ -69,6 +70,7 @@ const Jogs = (props) => {
                             speed={item.speed}
                             distance={item.distance}
                             time={item.time}
+                            date={item.date}
                             key={item.id}
                         />
                     ))

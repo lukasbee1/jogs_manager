@@ -36,6 +36,9 @@
     border: solid 3px #fff;
     margin-bottom: 36px;
 }
+.login-btn:hover {
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 768px) {
     .login-card {
