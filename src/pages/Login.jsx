@@ -23,7 +23,6 @@ const Login = (props) => {
             .then((response) => response.json())
             .then((data) => {
                 localStorage.setItem("userToken", data.timestamp);
-                console.log(data);
                 props.tryAuth(true);
                 console.log("token was saved");
             })

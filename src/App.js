@@ -10,11 +10,15 @@ import MobileMenu from "./components/MobileMenu";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 
-function App({ isAuth }) {
+import "./App.css"
+
+function App(props) {
+    const { isAuth } = props
     return (
         <>
             <Router>
-                <Navbar isAuth={false} />
+                {/* <Navbar /> */}
+                <Route component={Navbar} />
                 <Switch>
                     {isAuth ? (
                         <>
@@ -25,7 +29,7 @@ function App({ isAuth }) {
                             <Route path="/menu" component={MobileMenu} />
                         </>
                     ) : (
-                        <Route path="/" component={Login} exact />
+                        <Route path="/" component={Login} />
                     )}
                 </Switch>
             </Router>

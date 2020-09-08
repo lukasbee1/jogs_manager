@@ -9,9 +9,6 @@ import { connect } from "react-redux";
 
 const Navbar = (props) => {
     const { isAuth } = props;
-    useEffect(() => {
-        console.log(isAuth);
-    }, []);
     return (
         <div className="navbar">
             <NavLink to="/">
@@ -22,7 +19,11 @@ const Navbar = (props) => {
                     <ul className="rightMenu">
                         <NavLink
                             className="rightMenu-item"
-                            activeClassName="rightMenu-item--active"
+                            activeClassName={
+                                props.location.pathname === "/"
+                                    ? "rightMenu-item--active"
+                                    : null
+                            }
                             to="/"
                         >
                             JOGS

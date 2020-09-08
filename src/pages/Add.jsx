@@ -11,9 +11,6 @@ export const Add = (props) => {
     const handleSubmit = () => {
         props.addJog(jogInfo);
     };
-    useEffect(() => {
-        console.log(jogInfo);
-    }, [jogInfo]);
     const handleInputChange = (event) => {
         const target = event.target;
         const value = event.target.value;

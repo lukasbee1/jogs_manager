@@ -19,7 +19,6 @@ const Jogs = (props) => {
     }, []);
     const onFilterChanged = (e) => {
         let filtered = jogs;
-        console.log(e.target.name);
         if (e.target.name === "dFrom") {
             filtered = filtered.filter(
                 (jog) =>
