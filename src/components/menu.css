@@ -1,0 +1,46 @@
+@media only screen and (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 0;
+        /* left: 0; */
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        align-items: center;
+    }
+    .cancel-logo {
+        fill: #b0abab;
+        filter: invert(30%);
+        margin: 20px; 
+    }
+    .logo {
+        margin: 20px 25px;
+    }
+    .logo g {
+        fill: #7ed321;
+    }
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+        margin-top: 140px;
+    }
+    .menu-item {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .menu-item:active {
+        color: #7ed321
+    }
+    .menu-item:visited {
+        color: black;
+    }
+}

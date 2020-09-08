@@ -1,0 +1,35 @@
+.info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 615px;
+    margin: auto;
+}
+
+.info-header {
+    color: #7ed321;
+    font-family: SFUIText;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 85px;
+    margin-bottom: 0px;
+}
+.info-text {
+    margin: 15px 0;
+    font-family: SFUIText;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+@media only screen and (max-width: 768px) {
+    .info-content {
+        margin: 25px;
+    }
+    .info-header {
+        margin: 0;
+        
+    }
+    .info-text {
+        font-size: 12px;
+    }
+}

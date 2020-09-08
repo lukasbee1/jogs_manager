@@ -1,0 +1,79 @@
+.content {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    background-color: #7ed321;
+    border-radius: 44px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.closeIcon {
+    position: absolute;
+    right: 27px;
+    top: 24px;
+}
+.input {
+    margin: 100px 90px 46px 90px;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+.input-field {
+    width: 236px;
+    height: 30px;
+    border-radius: 7px;
+    border: solid 1px #979797;
+    margin: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+.input-field[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+.input-label {
+    font-family: SFUIText;
+    font-size: 16px;
+    font-weight: normal;
+    margin: auto 0;
+}
+.save-btn {
+    width: 320px;
+    height: 42px;
+    border-radius: 25.2px;
+    border: solid 2px #fff;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    margin-bottom: 47px;
+}
+
+@media only screen and (max-width: 768px) {
+    .input {
+        margin: 64px 35px 40px 35px;
+    }
+    .input-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-label {
+        text-align: left;
+    }
+    .input-field {
+        margin: 6px 0 20px;
+    }
+    .save-btn {
+        width: 237px;
+    }
+}
